@@ -948,73 +948,50 @@ section h2::after {
 .second-carousel {
   width: 100%;
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .carousel-slide {
-  height: 500px; /* Default height */
+  height: 500px;
   background-size: cover;
   background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  background-repeat: no-repeat;
+  position: relative; /* Still needed for proper child positioning */
 }
 
 .carousel-content {
+  position: absolute;
+  left: 50%; /* Horizontal centering start point */
+  transform: translateX(-50%); /* Only horizontal adjustment */
   color: white;
   font-size: 2rem;
   background: rgba(0, 0, 0, 0.5);
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
-  max-width: 90%; /* Ensures text does not exceed container */
-  word-wrap: break-word;
+  max-width: 60%;
+  text-align: center;
+  width: fit-content;
+  /* Removed vertical centering properties (top:50% and translateY) */
+  top: 10px; /* Adjust this value to set your preferred vertical position */
 }
 
-/* Large screens (desktops) */
+/* Responsive adjustments */
 @media (max-width: 1200px) {
-  .carousel-slide {
-    height: 450px;
-  }
-  .carousel-content {
-    font-size: 1.8rem;
-    padding: 15px;
-  }
+  .carousel-slide { height: 450px; }
+  .carousel-content { font-size: 1.8rem; max-width: 65%; }
 }
 
-/* Medium screens (tablets) */
 @media (max-width: 992px) {
-  .carousel-slide {
-    height: 400px;
-  }
-  .carousel-content {
-    font-size: 1.5rem;
-    padding: 12px;
-  }
+  .carousel-slide { height: 400px; }
+  .carousel-content { font-size: 1.5rem; max-width: 70%; }
 }
 
-/* Small screens (phones) */
 @media (max-width: 768px) {
-  .carousel-slide {
-    height: 350px;
-    background-size: contain; /* Ensures full image visibility */
-  }
-  .carousel-content {
-    font-size: 1.2rem;
-    padding: 10px;
-    max-width: 80%;
-  }
+  .carousel-slide { height: 350px; }
+  .carousel-content { font-size: 1.2rem; max-width: 75%; top: 15%; }
 }
 
-/* Extra small screens (very small phones) */
 @media (max-width: 480px) {
-  .carousel-slide {
-    height: 280px;
-    background-size: contain;
-  }
-  .carousel-content {
-    font-size: 1rem;
-    padding: 8px;
-    max-width: 90%;
-  }
+  .carousel-slide { height: 280px; }
+  .carousel-content { font-size: 1rem; max-width: 85%; padding: 12px; top: 10%; }
 }
