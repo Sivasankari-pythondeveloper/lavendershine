@@ -972,7 +972,7 @@ section h2::after {
   max-width: 90%; /* Wider on mobile */
   width: fit-content;
   text-align: center;
-  top: 20%; /* Default vertical position */
+  top: 0%; /* Default vertical position */
   word-break: keep-all; /* Prevents unwanted word breaks */
   white-space: normal; /* Allows text to wrap */
 }
@@ -1000,7 +1000,7 @@ section h2::after {
   .carousel-content {
     font-size: 1.5rem;
     max-width: 100%;
-    top: 5%;
+    top: 10%;
   }
 }
 
@@ -1012,6 +1012,6 @@ section h2::after {
   .carousel-content {
     font-size: 2rem;
     max-width: 90%;
-    top: 10%;
+    top: 15%;
   }
 }
