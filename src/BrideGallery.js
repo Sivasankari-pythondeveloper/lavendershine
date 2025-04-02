@@ -26,7 +26,7 @@ const BrideGallery = () => {
               <div className="bride-card">
                 <img 
                   src={model} 
-                  alt={`Bride ${index + 1}`} 
+                   
                   className="img-fluid rounded shadow bride-img"
                 />
                 
