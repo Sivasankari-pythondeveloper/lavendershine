@@ -168,7 +168,7 @@ const scrollToTop = () => {
                 style={{ backgroundImage: `url(${organic})` }}
               >
                 <div className="carousel-content">
-                  <h1>We Provide 100% Organic Mehandi<br />Natural Stains, Beautiful Gains</h1>
+                  <h1>We Provide 100% Organic Mehandi<br /></h1>
                 </div>
               </div>
             </Carousel.Item>
