@@ -829,3 +829,192 @@ section h2::after {
     font-size: 34px;
   }
 }
+
+
+
+/* Bride Gallery Styles */
+.bride-gallery-container {
+  padding: 2rem 0;
+  background-color: #f8f9fa;
+}
+
+.bridal-header {
+  padding: 2rem 0;
+  background: linear-gradient(135deg, #875692 0%, #a178ae 100%);
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.bridal-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.bridal-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.bride-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.bride-card:hover {
+  transform: translateY(-5px);
+}
+
+.bride-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.bride-card:hover .bride-img {
+  transform: scale(1.05);
+}
+
+.bride-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(135, 86, 146, 0.8);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.bride-card:hover .bride-overlay {
+  transform: translateY(0);
+}
+
+.bride-name {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 992px) {
+  .bridal-title {
+    font-size: 2rem;
+  }
+  
+  .bridal-subtitle {
+    font-size: 1rem;
+  }
+  
+  .bride-img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bridal-header {
+    padding: 1.5rem 0;
+  }
+  
+  .bridal-title {
+    font-size: 1.8rem;
+  }
+  
+  .bride-img {
+    height: 250px;
+  }
+}
+
+@media (max-width: 576px) {
+  .bridal-title {
+    font-size: 1.5rem;
+  }
+  
+  .bride-img {
+    height: 200px;
+  }
+  
+  .col-md-6 {
+    padding: 0 10px;
+  }
+}
+
+/* Default styles */
+.second-carousel {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.carousel-slide {
+  height: 500px; /* Default height */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.carousel-content {
+  color: white;
+  font-size: 2rem;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 90%; /* Ensures text does not exceed container */
+  word-wrap: break-word;
+}
+
+/* Large screens (desktops) */
+@media (max-width: 1200px) {
+  .carousel-slide {
+    height: 450px;
+  }
+  .carousel-content {
+    font-size: 1.8rem;
+    padding: 15px;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+  .carousel-slide {
+    height: 400px;
+  }
+  .carousel-content {
+    font-size: 1.5rem;
+    padding: 12px;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 768px) {
+  .carousel-slide {
+    height: 350px;
+    background-size: contain; /* Ensures full image visibility */
+  }
+  .carousel-content {
+    font-size: 1.2rem;
+    padding: 10px;
+    max-width: 80%;
+  }
+}
+
+/* Extra small screens (very small phones) */
+@media (max-width: 480px) {
+  .carousel-slide {
+    height: 280px;
+    background-size: contain;
+  }
+  .carousel-content {
+    font-size: 1rem;
+    padding: 8px;
+    max-width: 90%;
+  }
+}

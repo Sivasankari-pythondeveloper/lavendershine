@@ -8,7 +8,7 @@ import non3 from "../assets/non3.jpeg";
 import hd1 from "../assets/hd1.jpeg";
 import hd2 from "../assets/hd2.jpeg";
 import hd3 from "../assets/hd3.jpeg";
-import a3 from "../assets/a3.jpeg";
+import air from "../assets/air.jpg";
 import a2 from "../assets/a2.jpeg";
 import a4 from "../assets/a4.jpeg"
 
@@ -64,7 +64,7 @@ const Makeup = () => {
         </div>
         <div className="image-container">
           <img src={a2} alt="HD Makeup 1" className="styled-image" />
-          <img src={a3} alt="HD Makeup 2" className="styled-image" />
+          <img src={air} alt="HD Makeup 2" className="styled-image" />
           <img src={a4} alt="HD Makeup 3" className="styled-image" />
         </div>
         <svg className="wave-svg" viewBox="0 0 1440 320">

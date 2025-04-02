@@ -22,6 +22,9 @@ import flower2 from "./assets/flower2.jpg";
 import flower3 from "./assets/flower3.jpg";
 import flower4 from "./assets/flower4.jpg";
 import organic from "./assets/organic.jpeg";
+import pre3 from "./assets/pre3.jpg";
+import pre1 from "./assets/pre1.jpeg";
+import pre4 from "./assets/pre4.jpg";
 
 const services = [
   { id: 1, name: "Bride's Makeup", image: brideMakeup },
@@ -165,7 +168,7 @@ const scrollToTop = () => {
                 style={{ backgroundImage: `url(${organic})` }}
               >
                 <div className="carousel-content">
-                  <h1>Professional Makeup<br />For Every Occasion</h1>
+                  <h1>We Provide 100% Organic Mehandi<br />Natural Stains, Beautiful Gains</h1>
                 </div>
               </div>
             </Carousel.Item>
@@ -182,6 +185,7 @@ const scrollToTop = () => {
           </Carousel>
         </div>
         </section>
+        
 
         {/* Flower Section */}
         <section id='bridals'>
@@ -201,6 +205,42 @@ const scrollToTop = () => {
           <img src={flower4} alt="Flower" className="flower bottom-right" />
         </div>
       </section>
+
+      <section>
+  <Carousel className="second-carousel">
+    <Carousel.Item>
+      <div 
+        className="carousel-slide" 
+        style={{ backgroundImage: `url(${pre1})` }}
+      >
+        <div className="carousel-content">
+          <h1>We Provide Saree Pre Pleating Service <br />With Affordable Service</h1>
+        </div>
+      </div>
+    </Carousel.Item>
+    <Carousel.Item>
+      <div 
+        className="carousel-slide" 
+        style={{ backgroundImage: `url(${pre3})` }}
+      >
+        <div className="carousel-content">
+          <h1>Pleats according to clients body type measurement  <br /></h1>
+        </div>
+      </div>
+    </Carousel.Item>
+    <Carousel.Item>
+      <div 
+        className="carousel-slide" 
+        style={{ backgroundImage: `url(${pre4})` }}
+      >
+        <div className="carousel-content">
+          <h1>Anyone can drape a pre-pleated saree within 5 minutes <br /></h1>
+        </div>
+      </div>
+    </Carousel.Item>
+  </Carousel>
+</section>
+          
 
       {/* Services Section */}
       <section id="services">

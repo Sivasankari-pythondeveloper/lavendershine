@@ -9,6 +9,7 @@ import nail from "../assets/nail.jpeg";
 import pedi from "../assets/pedi.jpeg";
 import thread from "../assets/thread.jpeg";
 import waxing from "../assets/waxing.jpeg";
+import str from '../assets/fly.jpg';
 
 const images = [
   { src: mehandi, alt: "Mehandi" },
@@ -20,7 +21,8 @@ const images = [
   { src: cleanup, alt: "Cleanup" },
   { src: face, alt: "Facial" },
   { src: medi, alt: "Manicure" },
-  { src: pedi, alt: "Pedicure" }
+  { src: pedi, alt: "Pedicure" },
+  { src: str,alt: "Haircut"}
 ];
 
 const Groom = () => {
