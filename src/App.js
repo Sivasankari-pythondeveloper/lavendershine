@@ -35,7 +35,7 @@ const services = [
 
 
 const sendWhatsAppMessage = (serviceName) => {
-  const phoneNumber = "9597228864";
+  const phoneNumber = "7010208433";
   const message = `Hello, I would like to book *${serviceName}*`;
   const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
   window.open(whatsappURL, "_blank");

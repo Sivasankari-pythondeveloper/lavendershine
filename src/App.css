@@ -869,7 +869,7 @@ section h2::after {
 
 .bride-img {
   width: 100%;
-  height: 350px;
+  height: 500px;
   object-fit: cover;
   transition: transform 0.5s ease;
 }
@@ -936,7 +936,7 @@ section h2::after {
   }
   
   .bride-img {
-    height: 200px;
+    height: 500px;
   }
   
   .col-md-6 {
