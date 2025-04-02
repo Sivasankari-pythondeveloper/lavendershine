@@ -178,6 +178,7 @@ const scrollToTop = () => {
             </Carousel.Item>
           </Carousel>
         </div>
+        <div className="button">
         <button 
                     className="btn btn-success book-btn" 
                     onClick={() => sendWhatsAppMessage("Appointment")}
@@ -185,6 +186,7 @@ const scrollToTop = () => {
                     <FaWhatsapp size={20} />
                     Book Appointment
                   </button>
+                  </div>
         </section>
         
 
