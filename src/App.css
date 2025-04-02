@@ -957,38 +957,36 @@ section h2::after {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  overflow: hidden; /* Prevents text from overflowing */
+  overflow: hidden;
 }
 
 .carousel-content {
   position: absolute;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%); /* This centers the element */
   color: white;
   font-size: 2rem;
-  
   padding: 15px 20px;
   border-radius: 10px;
-  max-width: 90%; /* Wider on mobile */
+  max-width: 90%;
   width: fit-content;
   text-align: center;
-  top: 0%; /* Default vertical position */
-  word-break: keep-all; /* Prevents unwanted word breaks */
-  white-space: normal; /* Allows text to wrap */
+  word-break: keep-all;
+  white-space: normal;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: adds background for better readability */
 }
 
 /* Mobile-first responsive adjustments */
 @media (max-width: 480px) {
   .carousel-slide {
-    height: 300px; /* Slightly taller for mobile */
+    height: 300px;
   }
   
   .carousel-content {
     font-size: 1.2rem;
-    max-width: 100%;
     padding: 10px 15px;
-    top: 3%; /* Higher position on mobile */
-    line-height: 1.4; /* Better line spacing */
+    line-height: 1.4;
   }
 }
 
@@ -999,8 +997,6 @@ section h2::after {
   
   .carousel-content {
     font-size: 1.5rem;
-    max-width: 100%;
-    top: 10%;
   }
 }
 
@@ -1011,7 +1007,5 @@ section h2::after {
   
   .carousel-content {
     font-size: 2rem;
-    max-width: 90%;
-    top: 15%;
   }
 }
