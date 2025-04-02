@@ -29,9 +29,7 @@ const BrideGallery = () => {
                   alt={`Bride ${index + 1}`} 
                   className="img-fluid rounded shadow bride-img"
                 />
-                <div className="bride-overlay">
-                  <p className="bride-name">Bride {index + 1}</p>
-                </div>
+                
               </div>
             </div>
           ))}
