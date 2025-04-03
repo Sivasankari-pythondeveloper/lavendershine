@@ -42,13 +42,14 @@ section {
 
 @media (max-width: 768px) {
   .logo {
-    width: 220px; /* Adjust for tablets */
+    width: 220px;
   }
 }
 
 @media (max-width: 480px) {
   .logo {
-    width: 100px; /* Adjust for mobile */
+    width: 100px; 
+    
   }
 }
 

@@ -1,5 +1,5 @@
 import React from "react";
-import bleach from "../assets/bleach.jpeg";
+import bleach from "../assets/bleach.jpg";
 import cleanup from "../assets/cleanup.jpeg";
 import detan from "../assets/detan.jpeg";
 import face from "../assets/face.jpeg";
