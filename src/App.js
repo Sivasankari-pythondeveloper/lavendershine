@@ -13,7 +13,7 @@ import brideMakeup from "./assets/brideMakeup.jpg";
 import brideMaidMakeup from "./assets/brideMaidMakeup.jpg";
 import guestMakeup from "./assets/guestMakeup.jpg";
 import bridalFlowers from "./assets/bridalFlowers.jpg";
-import logo from "./assets/logo.png";
+import logo from "./assets/logo.jpg";
 import frontimage from "./assets/frontimage.jpg";
 import frontimage2 from "./assets/frontimage2.jpg";
 import frontimage3 from "./assets/frontimage3.jpg";
@@ -254,16 +254,60 @@ const scrollToTop = () => {
     
 
       {/* Contact Section */}
-      <section id="contact">
-        <footer id="contact" className="text-center mt-5 p-4 bg-light position-relative">
-                <h5>To book your appointment Contact Us</h5>
-                <p>Lavender Shine, Ettayapuram</p>
-                <p>Phone: 7010208433</p>
-                <div className="scroll-to-top" onClick={scrollToTop}>
-                  <FaArrowCircleUp size={40} color="maroon" />
-                </div>
-              </footer>
-      </section>
+<section id="contact">
+  <footer className="text-center mt-5 p-4 bg-light position-relative">
+    <div className="container">
+      <h2>Stay Up To Date</h2>
+      <p>Follow us on social media for the latest updates and bridal inspiration</p>
+      
+      <div className="social-icons d-flex justify-content-center gap-4 mb-3">
+        {/* Instagram Logo */}
+        <a 
+          href="https://instagram.com/lavendershine_makeoverartistry" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="social-icon"
+        >
+          <img 
+            src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" 
+            alt="Instagram" 
+            style={{ width: '40px', height: '40px' }}
+          />
+        </a>
+        
+        {/* Email Logo */}
+        <a 
+          href="mailto:lavendershine2025@gmail.com" 
+          className="social-icon"
+        >
+          <img 
+            src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" 
+            alt="Email" 
+            style={{ width: '40px', height: '40px' }}
+          />
+        </a>
+        
+        {/* WhatsApp Logo */}
+        <a 
+          href="https://wa.me/7010208433" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="social-icon"
+        >
+          <FaWhatsapp size={40} color="#25D366" />
+        </a>
+      </div>
+      
+      <h5>To book your appointment Contact Us</h5>
+      <p>Lavender Shine, Ettayapuram</p>
+      <p>Phone: 7010208433</p>
+      
+      <div className="scroll-to-top" onClick={scrollToTop}>
+        <FaArrowCircleUp size={40} color="maroon" />
+      </div>
+    </div>
+  </footer>
+</section>
     </div>
   );
 };

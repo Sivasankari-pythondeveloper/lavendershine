@@ -30,9 +30,28 @@ section {
 
 .logo {
   height: 100px;
-  width: 100px;
+  width: 300px;
   transition: all 0.3s ease;
+  border-radius:50px;
 }
+.logo {
+  width: 150px; /* Default size */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50px; /* Always keep 50px rounded corners */
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 220px; /* Adjust for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    width: 100px; /* Adjust for mobile */
+  }
+}
+
 
 .navbar-brand {
   color: white;
@@ -1062,5 +1081,108 @@ section h2::after {
   .book-btn svg {
     width: 16px;
     height: 16px;
+  }
+}
+/* Contact Section Styles */
+#contact {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+}
+
+#contact h2 {
+  color: #6a0dad;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+#contact p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Social Icons Styles */
+.social-icons {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-icon {
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+.social-icon img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .social-icons {
+    gap: 1rem;
+  }
+  
+  .social-icon img,
+  .social-icon svg {
+    width: 35px;
+    height: 35px;
+  }
+  
+  #contact h2 {
+    font-size: 1.5rem;
+  }
+  
+  #contact p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .social-icons {
+    gap: 0.75rem;
+  }
+  
+  .social-icon img,
+  .social-icon svg {
+    width: 30px;
+    height: 30px;
+  }
+  
+  #contact {
+    padding: 40px 0;
+  }
+  
+  #contact h2 {
+    font-size: 1.3rem;
+  }
+  
+  #contact p {
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .social-icons {
+    gap: 0.5rem;
+  }
+  
+  .social-icon img,
+  .social-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+  
+  #contact h2 {
+    font-size: 1.2rem;
   }
 }
